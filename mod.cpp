@@ -1,0 +1,12 @@
+name = "MediaModTemplate";
+picture = "logo.paa";
+description = "";
+logo = "logo.paa";
+logoOver = "logo.paa";
+tooltip = "mod_MediaModTemplate";
+tooltipOwned = "powered by KaifKol";
+overview = "MediaModTemplate";
+author = "KaifKol";
+overviewPicture = "logo.paa";
+overviewText = "MediaModTemplate";
+overviewFootnote = "";
