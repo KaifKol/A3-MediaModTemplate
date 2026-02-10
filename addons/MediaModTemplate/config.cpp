@@ -13,7 +13,7 @@ class CfgPatches
 };
 class CfgMusic
 {
-	#include "FileListWithMusicTracks.hpp"
+	#include "musiclist.hpp"
 };
 class CfgMusicClasses
 {
@@ -21,4 +21,9 @@ class CfgMusicClasses
 	{
 		displayName = "MediaModTemplate";
 	};
+};
+class CfgSounds
+{
+	sounds[] = {};
+	#include "soundlist.hpp"
 };
