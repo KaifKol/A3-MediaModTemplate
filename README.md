@@ -31,14 +31,12 @@ class MyTrackName {
     sound[] = {"YourModName\music\filename.ogg", db+0, 1};
     duration = 120;
 };
-
 ```
 
 
 3. **In-Game Command:**
 ```sqf
 playMusic "MyTrackName";
-
 ```
 
 
@@ -49,11 +47,25 @@ playMusic "MyTrackName";
 2. **In-Game Command:**
 ```sqf
 ["YourModName\video\yourvideo.ogv"] spawn BIS_fnc_playVideo;
+```
+*Note: Videos must be in `.ogv` (Ogg Theora) format.*
 
+### 🔊 Adding & Playing Sound Effects (SFX)
+
+1. **Add Files:** Place your `.ogg` files in the `sound` folder.
+2. **Register Sounds:** Open `soundlist.hpp` and define your sound class using the following structure:
+```cpp
+class MySoundEffect {
+    name = "My Sound Display Name"; // display name
+    sound[] = { "YourModName\sound\filename.ogg", 1, 1, 100 }; // file, volume, pitch, maxDistance
+    titles[] = {}; // subtitles
+};
 ```
 
 
-*Note: Videos must be in `.ogv` (Ogg Theora) format.*
+3. **In-Game Commands:**
+* **Global sound:** `playSound "MySoundEffect";`
+* **From an object (3D):** `player say3D "MySoundEffect";`
 
 ---
 
@@ -107,14 +119,12 @@ class MyTrackName {
     sound[] = {"YourModName\music\filename.ogg", db+0, 1};
     duration = 120;
 };
-
 ```
 
 
 3. **Команда в игре:**
 ```sqf
 playMusic "MyTrackName";
-
 ```
 
 
@@ -125,11 +135,25 @@ playMusic "MyTrackName";
 2. **Команда в игре:**
 ```sqf
 ["YourModName\video\yourvideo.ogv"] spawn BIS_fnc_playVideo;
+```
+*Примечание: Видео должно быть строго в формате `.ogv`.*
 
+### 🔊 Добавление звуковых эффектов (SFX)
+
+1. **Добавление:** Поместите файлы `.ogg` в папку `sound`.
+2. **Регистрация:** Откройте `soundlist.hpp` и добавьте класс звука по следующему образцу:
+```cpp
+class MySoundEffect {
+    name = "Название звука"; // Отображаемое имя
+    sound[] = { "YourModName\sound\filename.ogg", 1, 1, 100 }; // Путь, громкость, высота, дистанция
+    titles[] = {}; // Субтитры
+};
 ```
 
 
-*Примечание: Видео должно быть строго в формате `.ogv`.*
+3. **Команды в игре:**
+* **Общий звук:** `playSound "MySoundEffect";`
+* **Звук от объекта (3D):** `player say3D "MySoundEffect";`
 
 ---
 
