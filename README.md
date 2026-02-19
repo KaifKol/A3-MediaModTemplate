@@ -32,14 +32,19 @@ class MyTrackName {
     duration = 120;
 };
 ```
-
-
 3. **In-Game Command:**
 ```sqf
 playMusic "MyTrackName";
 ```
+### 🖼 Adding & Using Images
 
+1. **Add Files:** Place your `.paa` or `.jpg` files in the `images` folder.
+2. **In-Game Usage:**
 
+```sqf
+"YourModName\images\yourimage.paa"
+"YourModName\images\yourimage1.jpg"
+```
 
 ### 🎬 Adding & Playing Videos
 
@@ -61,8 +66,6 @@ class MySoundEffect {
     titles[] = {}; // subtitles
 };
 ```
-
-
 3. **In-Game Commands:**
 * **Global sound:** `playSound "MySoundEffect";`
 * **From an object (3D):** `player say3D "MySoundEffect";`
@@ -109,6 +112,7 @@ class MySoundEffect {
 
 ## 3. Инструкции по использованию
 
+
 ### 🎵 Добавление музыки
 
 1. **Добавление:** Положите файлы `.ogg` в папку `music`.
@@ -120,13 +124,20 @@ class MyTrackName {
     duration = 120;
 };
 ```
-
-
 3. **Команда в игре:**
 ```sqf
 playMusic "MyTrackName";
 ```
 
+### 🖼 Добавление и использование изображений
+
+1. **Добавление:** Поместите файлы `.paa` или `.jpg` в папку `images`.
+2. **Использование в игре:**
+
+```sqf
+"YourModName\images\yourimage.paa"
+"YourModName\images\yourimage1.jpg"
+```
 
 
 ### 🎬 Добавление видео
